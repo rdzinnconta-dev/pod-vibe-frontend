@@ -762,7 +762,7 @@ btnPagarReal.onclick = async () => {
     btnPagarReal.disabled = true;
     btnPagarReal.textContent = 'Gerando PIX...';
 
-    const response = await fetch('https://lar-conforto-api.onrender.com/api/gerar-pix-qr', {
+    const response = await fetch('https://pod-vibe-frontend.onrender.com/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ items })
